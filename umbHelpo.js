@@ -24,7 +24,7 @@
 
     jQuery(document).ready(function(){
 
-        $("body").append(`<a id="visSidebtn">Vis Node</a><input id="qsearch" type="text" style="display:none;">`);
+        $("body").append(`<a id="visSidebtn">Vis Node</a><input id="qsearch" type="text">`);
 
         //quicksearch - filter tree nodes
         $("#qsearch").keyup(function () {
@@ -58,12 +58,13 @@
         $("body").append(`
         <style>
 
-        input#qsearch {
-    position: absolute;
-    top: 20px;
-    left: 50%;
-    z-index: 999999999;
-}
+    input#qsearch {
+        position: absolute;
+        top: 58px;
+        left: 210px;
+        z-index: 999999999;
+        display:none;
+    }
 
         #visSidebtn {
     position: absolute;
